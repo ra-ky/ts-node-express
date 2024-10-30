@@ -91,24 +91,24 @@ npx sequelize-cli db:seed:all
 ### directory
 
 ```
-migrations/   #
-seeders/      #
-config/       #
-dist/         # ts build file
+migrations/                      # sequelize migrate - table
+seeders/                         # sequelize seed - sample data
+config/                          # sequelize db config
+dist/                            # ts build file
 src/
-├── config/
+├── config/                      # database config
 │   └── db.ts
-├── controllers/
+├── controllers/                 # endpoint code
 │   ├── post.controller.ts
 │   └── comment.controller.ts
-├── services/
+├── services/                    # sequelize orm
 │   ├── post.service.ts
 │   └── comment.service.ts
-├── models/
+├── models/                      # sequelize model
 │   ├── post.model.ts
 │   └── comment.model.ts
-├── routes/
+├── routes/                      # api route
 │   ├── post.route.ts
 │   └── comment.route.ts
-└── server.ts
+└── server.ts                    # main file
 ```
